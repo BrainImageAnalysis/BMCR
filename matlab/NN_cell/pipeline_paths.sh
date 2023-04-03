@@ -1,0 +1,14 @@
+
+SOFT_PATH="/disk/soft//CUDA/CUDA10.1/"
+
+export PATH=${SOFT_PATH}/bin:${PATH}
+
+export LD_LIBRARY_PATH=${SOFT_PATH}/lib64:$LD_LIBRARY_PATH
+export LD_RUN_PATH=${SOFT_PATH}/lib64:$LD_RUN_PATH
+export LDFLAGS=-L${SOFT_PATH}/lib64
+
+export C_INCLUDE_PATH=${SOFT_PATH}/include:${C_INCLUDE_PATH}
+export CPATH=${SOFT_PATH}/include:${CPATH}
+export CFLAGS=-I${SOFT_PATH}/include:${CFLAGS}
+export CPLUS_INCLUDE_PATH=${SOFT_PATH}/include:${CPLUS_INCLUDE_PATH}
+
