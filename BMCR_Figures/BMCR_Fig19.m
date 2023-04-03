@@ -2,7 +2,7 @@
 
 mapping = 'BMA';
 
-BMCR_data='/disk/skibbe/nextcloud/BIA/Henrik/Marmonet/BMCR_tracer/';
+BMCR_data='...';
 
 base = [BMCR_data,'/auxiliary_data/flatmap_stack_mapping_data/'];
 
