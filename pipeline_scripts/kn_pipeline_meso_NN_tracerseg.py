@@ -95,6 +95,7 @@ class CPipeStepAxonFilt(CPipeStep):
         out_list = ""
         slice_list =""
         for file_indx in range(0,len(all_fg_files)):
+            
             bg_f = os.path.join(ifolder+"/"+bg_channel+"/",all_bg_files[file_indx].split("_")[0]+".png")
             fg_f = os.path.join(ifolder+"/"+tracer_channel+"/",all_fg_files[file_indx].split("_")[0]+".png")
             
@@ -120,11 +121,11 @@ class CPipeStepAxonFilt(CPipeStep):
                             "echo ${WORKON_HOME}",
                             "workon pipeline3",
                             "which python",
-                            "cd /disk/k_raid/KAKUSHIN-NOU-DATA/SOFT/pipeline/pipeline_local/matlab/NN_tracer/",
+                            "cd "+pipedef.matlab_tools+"/NN_tracer/",
                             "python detect_tracer.py --pipe --model ./model_2019_04_16_state_01/tracer_net --fg "+fg_list+" --bg "+bg_list+" --out "+out_list+" --chkpt  175000  --min_size 4 "   
                             ]               
                     COMMAND =  [
-                            "cd /disk/k_raid/KAKUSHIN-NOU-DATA/SOFT/pipeline/pipeline_local/matlab/NN_tracer/",
+                            "cd "+pipedef.matlab_tools+"/NN_tracer/",
                             "python detect_tracer.py --pipe --model ./model_2019_04_16_state_01/tracer_net --fg "+fg_list+" --bg "+bg_list+" --out "+out_list+" --chkpt  175000  --min_size 4 "   
                             ]               
                     
@@ -137,13 +138,19 @@ class CPipeStepAxonFilt(CPipeStep):
                     bg_list = ""
                     out_list = ""      
                     slice_list =""
+
+                   # print(COMMAND)
                     
                     test+=1
                     if not success:
                       print(format(res))
                       print(format(self.jobids))
                       raise CPipeError("submitting GPU script failed ");
+                   # else:
+                   #    print(res)
+                       
                     self.jobids.append(int(res));
+            
             
             
             sliceid += 1
