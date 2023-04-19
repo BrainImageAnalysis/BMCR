@@ -26,7 +26,7 @@ class CPipeStepStitch3D(CPipeStep):
 	    sys.stdout.flush()
 
 	matlab_tools=pipedef.matlab_tools
-	matlab_bin==pipedef.matlab_bin
+	matlab_bin=pipedef.matlab_bin
 	channels = [1,2,3]      
 	def batch_run(self):
 		#matlab_tools='/disk/k_raid/KAKUSHIN-NOU-DATA/SOFT/pipeline/pipeline_local/matlab/'
