@@ -18,9 +18,8 @@ class CPipeStepInjSeg(CPipeStep):
 
     def batch_run(self):
         matlab_tools=pipedef.matlab_tools
-        matlab_tools2=pipedef.matlab_tools_
+        matlab_tools2=pipedef.matlab_tools+"/inject_side/"
         matlab_bin=pipedef.matlab_bin
-
 
         if True:
             print("#I: creating dest folders")

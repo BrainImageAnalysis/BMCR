@@ -89,7 +89,7 @@ try
                     fprintf('writing tempfile to %s\n',tmp);
                     imwrite(data,tmp);
                     %cmd = ['source ~/.bashrc;',nn_tools,'pipeline_nn_cell_apply.sh ',tmp,' ',tmp2 ];
-                    cmd = [nn_tools,'pipeline_nn_cell_apply.sh ',tmp,' ',tmp2 ];
+                    cmd = [nn_tools,'/pipeline_nn_cell_apply.sh ',tmp,' ',tmp2 ];
                     fprintf('%s\n',cmd);
                     [status,result] = system(cmd);
                     if (status~=0)
