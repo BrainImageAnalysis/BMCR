@@ -1,6 +1,6 @@
 {
     "description": "No description provided.", 
-    "license": "Apache License v2.0", 
+    "license": "Apache-2.0", 
     "title": "The Brain/MINDS Marmoset Connectivity Resource: Source code for the image processing pipeline", 
     "version": "1.0", 
     "upload_type": "software", 
