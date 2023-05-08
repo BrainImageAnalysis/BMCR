@@ -1,0 +1,71 @@
+{
+    "description": "No description provided.", 
+    "license": "Apache License v2.0", 
+    "title": "The Brain/MINDS Marmoset Connectivity Resource", 
+    "version": "1.0", 
+    "upload_type": "software", 
+    "publication_date": "2023-05-06", 
+    "creators": [
+        {
+            "name": "Skibbe, Henrik"
+        },
+        {
+            "name": "Rachmadi, Muhammad Febrian"
+        },
+        {
+            "name": "Ken, Nakae"
+        },
+        {
+            "name": "Gutierrez, Carlos Enrique"
+        },
+        {
+            "name": "Hata, Junichi"
+        },
+        {
+            "name": "Tsukada, Hiromichi"
+        },
+        {
+            "name": "Poon, Charissa"
+        },
+        {
+            "name": "Schlachter, Matthias"
+        },
+        {
+            "name": "Doya, Kenji"
+        },
+        {
+            "name": "Majka, Piotr"
+        },
+        {
+            "name": "Rosa, Marcello G. P."
+        },
+        {
+            "name": "Okano, Hideyuki"
+        },
+        {
+            "name": "Yamamori, Tetsuo"
+        },
+        {
+            "name": "Ishii, Shin"
+        },
+        {
+            "name": "Reisert, Marco"
+        },
+        {
+            "name": "Watakabe, Akiya"
+        }
+    ], 
+    "access_right": "open", 
+    "related_identifiers": [
+        {
+            "scheme": "url", 
+            "identifier": "https://github.com/BrainImageAnalysis/BMCR/tree/1.0", 
+            "relation": "isSupplementTo"
+        }, 
+        {
+            "scheme": "doi", 
+            "identifier": "10.5281/zenodo.7901942", 
+            "relation": "isVersionOf"
+        }
+    ]
+}
